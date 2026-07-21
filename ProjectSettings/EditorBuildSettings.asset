@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: 6d74da818dba46841a829bbeda312b8a
+  - enabled: 1
+    path: Assets/Scenes/HouseRosich.unity
+    guid: 4e2251b6a899b884eb0cd626b5d094b4
+  - enabled: 1
+    path: Assets/Scenes/HouseAzure.unity
+    guid: 5f60c38d52269d947b1bb778674d5a4a
+  - enabled: 1
+    path: Assets/Scenes/HouseAngelina1.unity
+    guid: 5993c8ebccfc672429818b57101093db
+  - enabled: 1
+    path: Assets/Scenes/HouseAngelina2.unity
+    guid: c83a9acae2e5e1945b5a99191bc10507
+  - enabled: 1
+    path: Assets/Scenes/HouseAngelina3.unity
+    guid: ba6b198870ebb24409bd34055a4692c7
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 36b2e7fd22ae379428a86cfecddb02aa
+  - enabled: 1
+    path: Assets/Scenes/ShopArmor.unity
+    guid: b8f34be0648be8f44927962e66c3008f
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 84860713586a59b4e85bb1c525dd6c0d
+  - enabled: 1
+    path: Assets/Scenes/ForestCloverHouse.unity
+    guid: 8b671c442a5380d43b4d014d20cd9771
+  - enabled: 1
+    path: Assets/Scenes/HouseYM.unity
+    guid: 4ffa09792ef69724693420d56bb8af8d
+  - enabled: 1
+    path: Assets/Scenes/Forest1.unity
+    guid: 958e903260c69ae41b25d5c44174678f
+  - enabled: 1
+    path: Assets/Scenes/Forest2.unity
+    guid: 7e2f81517c49ff841833d88e7e827bb4
+  - enabled: 1
+    path: Assets/Scenes/Forest3.unity
+    guid: db939e1a995b9394fa19fe379679d80f
+  - enabled: 1
+    path: Assets/Scenes/Forest4.unity
+    guid: 0ba094b3cf0f2874cb8c3c492165d281
+  - enabled: 1
+    path: Assets/Scenes/Forest5.unity
+    guid: 10accf57bccb02844b27f3f60ae78c5d
+  - enabled: 1
+    path: Assets/Scenes/Forest6.unity
+    guid: 7dcb534fb1be65c4097b04eadb2391fa
+  - enabled: 1
+    path: Assets/Scenes/Forest7.unity
+    guid: 8e38ba0eb533c214780728b175a6bfeb
+  - enabled: 1
+    path: Assets/Scenes/Forest8.unity
+    guid: f9809747292c5b941a55a1dd2213013a
+  - enabled: 1
+    path: Assets/Scenes/Forest9.unity
+    guid: a7cc3021a4ce16548bb1dc515f82bd75
+  - enabled: 1
+    path: Assets/Scenes/ForestBoss.unity
+    guid: 6def8216bbbcbab4486cd4e57c337ceb
+  - enabled: 1
+    path: Assets/Scenes/SecretMessage.unity
+    guid: 8cb739f3ce945f64d99507d4cc3c8107
+  - enabled: 1
+    path: Assets/Scenes/Boss1.unity
+    guid: d19b1af20b5d0d345b5d427ae28d6d9e
+  - enabled: 1
+    path: Assets/Scenes/Boss2.unity
+    guid: 91bd974ee07f74442ae50cb14a0fdd42
+  - enabled: 1
+    path: Assets/Scenes/Boss3.unity
+    guid: f684c5502c586e4489f7d2ca23994365
+  - enabled: 1
+    path: Assets/Scenes/Boss4.unity
+    guid: 574dd8e1fb487154a973653cab1f41b0
+  - enabled: 1
+    path: Assets/Scenes/Boss5.unity
+    guid: 59a07addbefe7794ab0b112b7023c32f
+  - enabled: 1
+    path: Assets/Scenes/Boss6.unity
+    guid: a481bcbf2a398cd4faca175dd0f5623e
+  - enabled: 1
+    path: Assets/Scenes/Boss7.unity
+    guid: 4ed480aff05e7b848a2ef5127ea47711
+  - enabled: 1
+    path: Assets/Scenes/ShopPink.unity
+    guid: 289a65b5745948f488c465e74214c0e4
+  - enabled: 1
+    path: Assets/Scenes/FightingScene.unity
+    guid: fa02e45707c95104eb6a1fc2d9c57cc1
+  m_configObjects: {}
