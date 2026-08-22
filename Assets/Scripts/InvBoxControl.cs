@@ -97,6 +97,9 @@ public class InvBoxControl : MonoBehaviour
         {
             sto[i] = defaultSprite;
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        
     }
 
     void Update()
@@ -109,7 +112,6 @@ public class InvBoxControl : MonoBehaviour
             if (isInvOpen == false)
             {
                 OpenInv();
-
             }
             else
             {
@@ -124,9 +126,6 @@ public class InvBoxControl : MonoBehaviour
             coins++;
         }
 
-        ItemAnimation = GameObject.Find("ItemAnimation");
-        ItemAnimationImage = GameObject.Find("ItemAnimationImage").GetComponent<Image>();
-        ItemAnimator = GameObject.Find("ItemAnimationImage").GetComponent<Animator>();
     }
 
     public void FightInv()
@@ -234,6 +233,17 @@ public class InvBoxControl : MonoBehaviour
 
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Check for your specific scene by its name
+        if (scene.name == "FightingScene")
+        {
+            ItemAnimation = GameObject.Find("ItemAnimation");
+            ItemAnimationImage = GameObject.Find("ItemAnimation").GetComponent<Image>();
+            ItemAnimator = GameObject.Find("ItemAnimation").GetComponent<Animator>();
+            ItemAnimation.SetActive(false);
+        }
+    }
     public void InvButtonPress(int slot)
     {
         if (SceneManager.GetSceneByName("FightingScene").isLoaded)
@@ -293,8 +303,6 @@ public class InvBoxControl : MonoBehaviour
         {
             fightingScript.enemyLife -= ItemNumber;
             fightingScript.showDamageText(ItemNumber, "damageEnemy");
-
-            ItemThrowAnim();
         }
 
         if (fightingScript.playerLife > 100)
@@ -305,11 +313,19 @@ public class InvBoxControl : MonoBehaviour
         Invoke("FS_enemyTurn", 2f);
     }
 
-    public void ItemThrowAnim()
+    public void ItemAnim()
     {
         ItemAnimation.SetActive(true);
-        ItemAnimator.Play("ItemFriendlyThrow");
-        Invoke("ItemIdleAnim", 1.5f);
+
+        if (currentItemType == "item"){
+            ItemAnimator.Play("ItemFriendlyThrow");
+        }
+        else if (currentItemType == "heal")
+        {
+            ItemAnimator.Play("ItemHeal");
+        }
+
+        Invoke("ItemIdleAnim", 0.75f);
     }
 
     public void ItemIdleAnim()
@@ -326,7 +342,7 @@ public class InvBoxControl : MonoBehaviour
     public void ConfirmButton()
     {
         FullInventory[selectedSlot].sprite = defaultSprite;
-        if (selectedSlot <= 9)
+        if (selectedSlot < 9)
         {
             inv[selectedSlot] = defaultSprite;
         }
@@ -339,6 +355,7 @@ public class InvBoxControl : MonoBehaviour
 
         fightingScript.disableButtons();
         Invoke("UseItem", 1f);
+        ItemAnim();
     }
 
 }
