@@ -145,7 +145,7 @@ public class factRandomizer : MonoBehaviour
     void Update()
     {
         // checks if loading screen is on
-        if (loadingScreen.active == true)
+        if (loadingScreen.activeSelf == true)
         {
             //picks q random fact from list and displays it
             if (newFact == 1)

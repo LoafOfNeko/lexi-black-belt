@@ -365,6 +365,7 @@
 "Assets/Scripts/Singleton.cs"
 "Assets/Scripts/Talkable.cs"
 "Assets/Scripts/textBoxControl.cs"
+"Assets/Scripts/titleManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

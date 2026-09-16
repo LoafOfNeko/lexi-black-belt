@@ -66,7 +66,7 @@ public class textBoxControl : MonoBehaviour
             //text.text = currentTexts[i].Substring(0, currentLetter);
             currentLetter = 0;
         }
-        if (holder.active == true){
+        if (holder.activeSelf == true){
             text.text = currentTexts[i].Substring(0, currentLetter);
             if(currentLetter < currentTexts[i].Length)
                 currentLetter++;
